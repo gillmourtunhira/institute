@@ -1,59 +1,65 @@
-<?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package Institute
- */
-
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'institute' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$institute_description = get_bloginfo( 'description', 'display' );
-			if ( $institute_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $institute_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'institute' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+<body>
+    <!-- Notification Section -->
+    <section>
+        <div class="noti__wrapper">
+            <div class="noti__info">
+                <div class="noti__info--notification">
+                    <h5><span class="material-icons">notifications_active</span>Masks still required on campus due to high transmission and low vaccination rates in Davidson and Davie counties.</h5>
+                </div>
+            </div>
+            <div class="noti__strip--wrapper">
+                <div class="noti__strip--items rowblock">
+                    <div class="noti__strip--social">
+                        <ul class="social__links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Youtube</a></li>
+                        </ul>
+                    </div>
+                    <div class="noti__strip--menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Students</a></li>
+                                <li><a href="#">Staff</a></li>
+                                <li><a href="#">Alumni</a></li>
+                                <li><a href="#">Faculties</a></li>
+                                <li><a href="#">International</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Notification Section -->
+    <!-- Primary Strip Section -->
+    <section>
+        <div class="primary__strip--wrapper">
+            <div class="primary__strip--items">
+                <div class="primary__strip--logo">
+                    <h3>LOGO</h3>
+                </div>
+                <div class="primary__strip--menu">
+                    <nav>
+                        <ul class="main--menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Schools</a></li>
+                            <li><a href="#">Research</a></li>
+                            <li><a href="#">Centres</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Primary Strip Section -->
