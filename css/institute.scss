@@ -6,6 +6,7 @@
     --firstColor: #ffb53a;
     --secondColor: #062b5d;
     --thirdColor: #8dd7f3;
+    --textColor: #2c2c2b;
 
     --fontDefault: 'Roboto', sans-serif;
 }
@@ -17,7 +18,7 @@
 }
 
 body{
-    background-color: var(--mainBgColor);
+    // background-color: var(--mainBgColor);
     font-family: var(--fontDefault);
 }
 
@@ -27,6 +28,7 @@ body{
 }
 
 @media screen and (min-width:769px) {
+    /* Notification Section CSS */
     .noti{
         &__wrapper {
             width: 100%;
@@ -49,17 +51,23 @@ body{
         &__strip{
             &--wrapper{
                 background-color: var(--secondColor);
+                height: 100%;
+                max-height: 40px;
             }
             &--items{
                 display: flex;
                 justify-content: space-between;
-                padding: 1em;
+                padding: .5em 0;
+                align-items: center;
+                height: 100%;
+                max-height: 40px;
             }
             &--social{
                 ul{
                     display: flex;
                     li{
                         list-style: none;
+                        margin-right: 1em;
                         a{
                             text-decoration: none;
                             color: #fff;
@@ -72,15 +80,136 @@ body{
                     display: flex;
                     li{
                         list-style: none;
-                        margin-right: 1em;
-                        font-weight: 500;
+                        margin-left: 1em;
+                        font-weight: 400;
+                        font-size: .8em;
                         a{
                             text-decoration: none;
                             color: #fff;
+                            text-transform: uppercase;
                         }
                     }
                 }
             }
         }
     }
+    .social__links{
+        img{
+            width: 24px;
+            height: auto;
+            filter: invert(1);
+        }
+    }
 }
+ /* End Notification Section CSS */
+
+ /* Primary Menu Section CSS */
+.primary{
+    &__strip{
+        &--wrapper{
+            background-color: var(--mainBgColor);
+            box-shadow: 0 0px 10px -2px #000;
+        }
+        &--items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 0;
+        }
+        &--menu{
+            .main--menu{
+                display: flex;
+                li{
+                    list-style: none;
+                    margin-left: 1em;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    a{
+                        color: var(--textColor);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Primary Menu Section CSS */
+
+/* Hero Section CSS */
+.hero{
+    &__items{
+        &--slider{
+            display: flex;
+            max-height: 500px;
+            height: 100%;
+            background-color: var(--secondColor);
+        }
+        &--details{
+            background-color: var(--secondColor);
+            color: #fff;
+            width: 100%;
+            max-width: 730px;
+            padding: 4em 4em 4em 0;
+            transform: skew(-20deg);
+            -ms-transform: skew(-20deg, 0deg);
+            -webkit-transform: skew(-20deg, 0deg);
+            transform-origin: bottom left;
+            z-index: 1;
+            &-inside{
+                transform: skew(20deg, 0deg);
+                -ms-transform: skew(20deg, 0deg);
+                -webkit-transform: skew(20deg, 0deg);
+                h3{
+                    font-size: 48px;
+                    margin-bottom: 1em;
+                    font-weight: 300;
+                }
+                p{
+                    font-size: 24px;
+                    margin-bottom: 3em;
+                    font-weight: 300;
+                }
+                a{
+                    background-color: var(--firstColor);
+                    color: var(--secondColor);
+                    padding: .8em 2em;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-weight: 900;
+                    border-radius: 5px;
+                }
+            }
+        }
+        &--img{
+            object-fit: fill;
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                filter: grayscale(1);
+            }
+        }
+        &--navbuttons{
+            position: absolute;
+            bottom: 0;
+            top: 240px;
+            left: 10em;
+            display: flex;
+            justify-content: space-between;
+            width: 85%;
+            height: 56px;
+            a{
+                background-color: var(--firstColor);
+                color: var(--mainBgColor);
+                padding: 1em;
+                border-radius: 50px;
+                display: flex;
+                text-decoration: none;
+                align-content: center;
+            }
+        }
+    }
+}
+/* End Hero Section CSS */

@@ -11,18 +11,9 @@
 
 ?>
 <?php get_header(); ?>
-    <!-- Hero Section -->
-    <section>
-        <div class="hero__wrapper">
-            <div class="hero__items">
-                <div class="hero__items--slider"></div>
-                <div class="hero__items--register"></div>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Section -->
+    
+    <?php  get_template_part( 'template-parts/content', 'hero' );  ?>
     <!-- Search Section -->
     <section></section>
     <!-- End Search Section -->
-</body>
-</html>
+<?php get_footer(); ?>
