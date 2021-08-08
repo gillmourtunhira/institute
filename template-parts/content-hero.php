@@ -1,4 +1,3 @@
- <!-- Hero Section -->
  <section>
 		<div class="hero__wrapper">
 			<div class="hero__items">
@@ -25,4 +24,3 @@
 			</div>
 		</div>
 </section>
-	<!-- End Hero Section -->
