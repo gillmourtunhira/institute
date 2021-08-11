@@ -12,7 +12,7 @@
 		<div class="noti__wrapper">
 			<div class="noti__info">
 				<div class="noti__info--notification">
-					<h5><span class="material-icons">notifications_active</span>Masks still required on campus due to high transmission and low vaccination rates in Davidson and Davie counties.</h5>
+					<h5><span class="material-icons">notifications_active</span>Masks still required on campus due to high transmission and low vaccination rates in Harare Metropolitan</h5>
 				</div>
 			</div>
 			<div class="noti__strip--wrapper">

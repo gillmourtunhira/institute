@@ -13,19 +13,11 @@
 <?php get_header(); ?>
 	 <!-- Hero Section -->
 	<?php get_template_part( 'template-parts/content', 'hero' ); ?>
-     <!-- End Hero Section -->
+	 <!-- End Hero Section -->
 	<!-- Search Section -->
 	<?php get_template_part( 'template-parts/content', 'searchstrip' ); ?>
 	<!-- End Search Section -->
-     <!-- Features Section -->
-     <section>
-         <div class="features__wrapper">
-             <div class="features__items">
-                 <div class="features__items--news"></div>
-                 <div class="features__items--events"></div>
-                 <div class="features__items--links"></div>
-             </div>
-         </div>
-     </section>
-     <!-- End Features Section -->
+	 <!-- Features Section -->
+	 <?php get_template_part( 'template-parts/content', 'features' ); ?>
+	 <!-- End Features Section -->
 <?php get_footer(); ?>
