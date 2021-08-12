@@ -17,7 +17,13 @@
 	<!-- Search Section -->
 	<?php get_template_part( 'template-parts/content', 'searchstrip' ); ?>
 	<!-- End Search Section -->
-	 <!-- Features Section -->
-	 <?php get_template_part( 'template-parts/content', 'features' ); ?>
-	 <!-- End Features Section -->
+	<!-- Features Section -->
+	<?php get_template_part( 'template-parts/content', 'features' ); ?>
+	<!-- End Features Section -->
+	<!-- Quote Section -->
+	<?php get_template_part( 'template-parts/content', 'quote' ); ?>
+	<!-- End Quote Section -->
+	<!-- Student Block Section -->
+	<?php get_template_part( 'template-parts/content', 'sblock' ); ?>
+	<!-- Student Block Section -->
 <?php get_footer(); ?>

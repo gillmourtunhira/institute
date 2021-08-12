@@ -341,6 +341,37 @@ body{
             max-width: 285px;
             background-color: var(--secondColor);
             border-radius: 5px;
+            padding: 1em;
+            padding-top: .5em;
+            h3{
+                font-size: .8em;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: var(--firstColor);
+                margin-bottom: .2em;
+            }
+            .important__links{
+                height: 100%;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    justify-content: space-around;
+                    li{
+                        list-style: none;
+                        background-color: var(--firstColor);
+                        padding: .2em .5em;
+                        border-radius: 5px;
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: var(--secondColor);
+                            font-size: .9em;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -492,3 +523,149 @@ body{
     }
 }
 /* End Features Items Section */
+
+/* Qoute Section */
+.quote{
+    &__wrapper{
+        background-color: #c4c4c469;
+        height: 100%;
+        max-height: 320px;
+        padding: 2em 5em;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        h4{
+            color: var(--secondColor);
+            text-transform: uppercase;
+        }
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--statement{
+            background-color: var(--firstColor);
+            padding: 2em;
+            p{
+                font-size: 1.3em;
+                font-weight: 400;
+            }
+            h6{
+                font-size: 1.2em;
+                font-weight: 300;
+                margin-top: .8em;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+            }
+            span{
+                content: '';
+                width: 24px;
+                height: 1px;
+                display: block;
+                color: #000;
+                border: 1px solid;
+            }
+        }
+        &--person{
+            position: relative;
+            right: 50px;
+            img{
+                width: 192px;
+                height: 192px;
+                border-radius: 50%;
+                background-color: var(--secondColor);
+                padding: .5em;
+            }
+        }
+    }
+}
+/* Qoute Section */
+
+/* S-Block Section */
+.sblock{
+    &__wrapper{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    &__column{
+        display: flex;
+        justify-content: space-between;
+        &--posts{
+            width: 100%;
+            max-width: 660px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &--gallery{
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            max-height: 360px;
+            background-color: var(--secondColor);
+            padding: 1em;
+            border-radius: 5px;
+            h3{
+                font-size: .9em;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            .gallery{
+                &__items{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 1em;
+                    padding: 1.2em .5em;
+                }
+                &__pic{
+                    img{
+                        width: 140px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+.post{
+    &__items{
+        &--article{
+            width: 100%;
+            max-width: 320px;
+            height: 100%;
+            max-height: 360px;
+            article{
+                background-color: var(--firstColor);
+                border-radius: 5px;
+            }
+            img{
+                width: 320px;
+                height: 160px;
+                object-fit: cover;
+            }
+        }
+        &--desc{
+            padding: .8em;
+            h5{
+                font-size: 1.2em;
+                font-weight: 500;
+                margin-bottom: .5em;
+            }
+            p{
+                font-size: .9em;
+            }
+        }
+    }
+}
+/* End S-Block Section */
+
+/* Footer Section */
+.site__footer{
+    background-color: var(--secondColor);
+    padding: 5em;
+}
+
+/* End Footer Section */

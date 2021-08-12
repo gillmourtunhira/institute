@@ -11,8 +11,12 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		
+	<footer id="colophon" class="site__footer">
+		<section>
+			<div class="footer__wrapper rowblock">
+
+			</div>
+		</section>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

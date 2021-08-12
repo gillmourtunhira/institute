@@ -30,7 +30,7 @@
 								<li><a href="#">Students</a></li>
 								<li><a href="#">Staff</a></li>
 								<li><a href="#">Alumni</a></li>
-								<li><a href="#">Faculties</a></li>
+								<li><a href="#">Board</a></li>
 								<li><a href="#">International</a></li>
 							</ul>
 						</nav>

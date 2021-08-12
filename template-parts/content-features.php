@@ -67,7 +67,22 @@
 						 </div>
 					 </article>
 				 </div>
-				 <div class="features__items--links"></div>
+				 <div class="features__items--links">
+					 <h3>Important Links</h3>
+					 <div class="important__links">
+						 <ul>
+							 <li><a href="#">Online Application</a></li>
+							 <li><a href="#">Student Portal</a></li>
+							 <li><a href="#">Student E-Learning</a></li>
+							 <li><a href="#">Vacancies</a></li>
+							 <li><a href="#">How to Apply</a></li>
+							 <li><a href="#">ICTS Help Desk</a></li>
+							 <li><a href="#">Tenders</a></li>
+							 <li><a href="#">Short Courses</a></li>
+							 <li><a href="#">Inst-Tech Holdings</a></li>
+						 </ul>
+					 </div>
+				 </div>
 			 </div>
 		 </div>
 </section>
